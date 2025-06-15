@@ -1,0 +1,25 @@
+.header {
+    padding: 50px 0;
+    /* .header__container */
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+        gap: 95px;
+    }
+
+    /* .header__logo */
+
+    &__logo {}
+
+    /* .header__nav */
+
+    &__nav {
+        display: flex;
+        gap: 95px;
+    }
+
+    /* .header__link */
+
+    &__link {}
+}
