@@ -1,0 +1,116 @@
+.events {
+    margin-top: 100px;
+    /* .events__container */
+
+    &__container {}
+
+    /* .events__desc */
+
+    &__desc {}
+
+    /* .events__title */
+
+    &__title {}
+
+    /* .events__text */
+
+    &__text {
+        max-width: 455px;
+    }
+
+    /* .events__inner-wrapper */
+
+    &__inner-wrapper {
+        display: grid;
+        gap: 25px;
+        grid-auto-rows: 260px;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+        grid-template-areas: "price price kitchen kitchen"
+            "free social social choose";
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 860px;
+            height: 620px;
+            position: absolute;
+            top: -410px;
+            left: -610px;
+            z-index: -10;
+            background-image: url(../images/icons/lines.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(410deg);
+        }
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            bottom: -50px;
+            right: 50%;
+            z-index: -5;
+
+            width: 320px;
+            height: 270px;
+
+            border-radius: 100%;
+            background-color: rgba(217, 217, 217, 0.2);
+            filter: blur(100px);
+        }
+    }
+}
+
+.event {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 45px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* .event__title */
+
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 109%;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        width: 294px;
+    }
+
+    /* .event__btn */
+
+    &__btn {
+        padding: 20px 50px;
+        width: fit-content;
+    }
+}
+
+.event--price {
+    background-image: url(../images/events/1.png);
+    grid-area: price;
+}
+
+.event--kitchen {
+    background-image: url(../images/events/2.png);
+    grid-area: kitchen;
+}
+
+.event--free {
+    background-image: url(../images/events/3.png);
+    grid-area: free;
+}
+
+.event--social {
+    background-image: url(../images/events/4.png);
+    grid-area: social;
+}
+
+.event--choose {
+    background-image: url(../images/events/5.png);
+    grid-area: choose;
+}
