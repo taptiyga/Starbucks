@@ -34,6 +34,15 @@ a {
     }
 }
 
+button {
+    transition: opacity 0.3s;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        opacity: .8;
+    }
+}
 
 img {
     max-width: 100%;

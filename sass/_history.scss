@@ -1,10 +1,11 @@
 .history {
     margin-top: 135px;
+    margin-bottom: 25px;
     /* .history__container */
 
     &__container {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
 
