@@ -194,4 +194,192 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.benefits {
+  margin-top: 110px;
+  /* .benefits__container */
+  /* .benefits__item */
+  /* .benefits__img-wrapper */
+  /* .benefits__icon */
+  /* .benefits__heart */
+  /* .benefits__title */
+  /* .benefits__desc */
+  /* .benefits__rocket */
+  /* .benefits__money */
+}
+.benefits__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+  max-width: 1030px;
+  padding-top: 55px;
+  padding-bottom: 25px;
+  border-radius: 46px;
+  position: relative;
+}
+.benefits__container::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50px;
+  z-index: -5;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+  filter: blur(100px);
+}
+.benefits__container::after {
+  content: "we\ahave";
+  white-space: pre-wrap;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/icons/star.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benefits__item {
+  max-width: 220px;
+  text-align: center;
+}
+.benefits__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.benefits__img-wrapper::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, #237249 0%, #35c66d 100%);
+  box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+}
+.benefits__icon {
+  width: 146px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.benefits__heart {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.benefits__title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #121517;
+  margin-bottom: 15px;
+}
+.benefits__desc {
+  line-height: 163%;
+  color: rgba(18, 21, 23, 0.9);
+}
+.benefits__rocket {
+  width: 210px;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+.benefits__money {
+  width: 210px;
+}
+
+.history {
+  margin-top: 135px;
+  /* .history__container */
+  /* .history__img-wrapper */
+  /* .history__img */
+  /* .history__text */
+  /* .history__pic */
+  /* .history__desc */
+  /* .history__title */
+}
+.history__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.history__img-wrapper {
+  display: flex;
+  position: relative;
+  box-shadow: -14px 26px 65px 0 rgba(0, 0, 0, 0.39);
+}
+.history__img-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 25px;
+  left: -35px;
+  z-index: -10;
+  -webkit-clip-path: polygon(67% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(67% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+  background: #237249;
+}
+.history__img {
+  max-width: 465px;
+  -webkit-clip-path: polygon(67% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(67% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+}
+.history__desc {
+  max-width: 460px;
+  position: relative;
+}
+.history__desc::before {
+  content: "";
+  width: 920px;
+  height: 670px;
+  position: absolute;
+  right: -145px;
+  bottom: -290px;
+  z-index: -10;
+  background-image: url(../images/icons/lines.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(37deg);
+}
+.history__title {
+  margin-bottom: 65px;
+  position: relative;
+}
+.history__title::before {
+  content: "";
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  z-index: -5;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+  filter: blur(90px);
+}
+.history__text {
+  margin-bottom: 65px;
+}
+.history__pic {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 23%, 11% 0);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 23%, 11% 0);
 }/*# sourceMappingURL=style.css.map */
