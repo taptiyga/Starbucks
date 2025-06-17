@@ -6,6 +6,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
     }
 
     /* .welcome__desc */
@@ -61,6 +66,10 @@
         padding-right: 60px;
         position: relative;
 
+        @media(max-width: 1192px) {
+            padding-right: 0;
+        }
+
         &::before {
             content: "";
             width: 860px;
@@ -75,6 +84,13 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+
+            @media (max-width: 992px) {
+                width: 550px;
+                height: 550px;
+                right: -150px;
+                bottom: -150px;
+            }
         }
 
         &::after {
@@ -97,8 +113,12 @@
     /* .welcome__img */
 
     &__img {
-        max-width: 470px;
+        width: 470px;
         animation: moveCup 1.5s infinite alternate ease-in-out;
+
+        @media (max-width: 992px) {
+            width: 280px;
+        }
     }
 }
 

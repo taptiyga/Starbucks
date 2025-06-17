@@ -7,6 +7,13 @@
     &__container {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 850px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 50px;
+            text-align: center;
+        }
     }
 
     /* .contacts__desc */
@@ -92,6 +99,11 @@
             background-position: center;
             background-repeat: no-repeat;
             transform: rotate(17deg);
+
+            @media (max-width: 850px) {
+                transform: rotate(33deg);
+                bottom: -240px;
+            }
         }
     }
 
@@ -135,6 +147,12 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+
+            @media (max-width: 850px) {
+                left: auto;
+                right: -200px;
+                top: 0;
+            }
         }
     }
 
@@ -143,5 +161,11 @@
     &__img {
         width: 353px;
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+
+        @media (max-width: 850px) {
+            width: 450px;
+            height: 400px;
+            object-fit: cover;
+        }
     }
 }

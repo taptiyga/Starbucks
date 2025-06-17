@@ -20,8 +20,9 @@
 
     &__cards {
         display: flex;
-        gap: 30px;
-        justify-content: space-between;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     /* .products__card */
@@ -29,7 +30,11 @@
     &__card {}
 }
 
-.hide-text-mobile {}
+.hide-text-mobile {
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
 
 .card-products {
     position: relative;

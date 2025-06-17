@@ -1,5 +1,7 @@
 .benefits {
     margin-top: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
     /* .benefits__container */
 
     &__container {
@@ -56,6 +58,10 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+
+            @media(max-width: 1192px) {
+                left: 50px;
+            }
         }
     }
 

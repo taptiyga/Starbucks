@@ -1,12 +1,19 @@
 .history {
     margin-top: 135px;
     margin-bottom: 25px;
+
     /* .history__container */
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            gap: 60px;
+            text-align: center;
+        }
     }
 
     /* .history__img-wrapper */
@@ -38,6 +45,12 @@
     &__img {
         max-width: 465px;
         clip-path: polygon(67% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+
+        @media (max-width: 992px) {
+            width: 450px;
+            height: 400px;
+            object-fit: cover;
+        }
     }
 
     /* .history__text */
@@ -59,6 +72,10 @@
             background-position: center;
             background-repeat: no-repeat;
             transform: rotate(37deg);
+
+            @media (max-width: 992px) {
+                right: -255px;
+            }
         }
     }
 

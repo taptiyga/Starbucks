@@ -13,6 +13,13 @@
         align-items: flex-start;
 
         margin-bottom: 85px;
+
+        @media (max-width: 850px) {
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 40px;
+            margin-bottom: 40px;
+        }
     }
 
     /* .footer__logo */
@@ -24,6 +31,17 @@
     &__nav {
         display: flex;
         gap: 80px;
+
+        @media (max-width: 992px) {
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            width: 100%;
+            order: 1;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
 
     /* .footer__nav-col */
@@ -31,6 +49,10 @@
     &__nav-col {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 850px) {
+            width: calc(50% - 15px);
+        }
     }
 
     /* .footer__nav-link */

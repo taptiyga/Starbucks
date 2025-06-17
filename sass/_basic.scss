@@ -12,9 +12,10 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
-    background-color: $bg;
-    color: $colorText;
+    background-color: #121517;
+    color: #d9d9d9;
     font-size: 20px;
     line-height: 163%;
     letter-spacing: -0.02em;
@@ -26,7 +27,7 @@ h2 {
 }
 
 a {
-    color: $colorText;
+    color: #d9d9d9;
     text-decoration: none;
     transition: opacity 0.3s;
 
@@ -100,9 +101,19 @@ img {
     gap: 70px;
     margin-bottom: 60px;
 
+    @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
     /* .text-row__title */
     &--reverce {
         flex-direction: row-reverse;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -123,6 +134,11 @@ img {
             border-radius: 100%;
             background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
             filter: blur(90px);
+
+            @media (max-width: 992px) {
+                right: auto;
+                left: 50px;
+            }
         }
     }
 
