@@ -1,11 +1,26 @@
 .header {
     padding: 50px 0;
+
     /* .header__container */
+    @media (max-width: 768px) {
+        padding: 35px 0;
+    }
 
     &__container {
         display: flex;
+
         align-items: baseline;
         gap: 95px;
+
+        @media (max-width: 768px) {
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        @media (max-width: 400px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     /* .header__logo */
@@ -17,6 +32,15 @@
     &__nav {
         display: flex;
         gap: 95px;
+
+        @media (max-width: 768px) {
+            gap: 30px;
+        }
+
+        @media (max-width: 400px) {
+            margin-left: auto;
+        }
+
     }
 
     /* .header__link */
