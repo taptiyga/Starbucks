@@ -8,19 +8,19 @@
     <title>Starbucks</title>
 </head>
 
-<body>
+<body id="top">
     <header class="header">
         <div class="container header__container">
-            <a href="#!" class="logo header__logo gradient">StarBucks</a>
+            <a href="#welcome" class="logo header__logo gradient">StarBucks</a>
             <nav class="header__nav">
-                <a href="#!" class="header__link">Home</a>
-                <a href="#!" class="header__link">Select</a>
-                <a href="#!" class="header__link">Shop</a>
+                <a href="#history" class="header__link">Home</a>
+                <a href="#products" class="header__link">Select</a>
+                <a href="#events" class="header__link">Shop</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="welcome">
+        <section class="welcome" id="welcome">
             <div class="welcome__container container">
                 <div class="welcome__desc">
                     <h1 class="welcome__title title">New Cafe by&nbsp;<span class="gradient">StarBucks</span></h1>
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section class="history">
+        <section id="history" class="history">
             <div class="history__container container">
                 <div class="history__img-wrapper">
                     <img src="./images/room.jpg" alt="room" class="history__img">
@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section id="products" class="products">
             <div class="products__container container">
                 <div class="text-row products__desc">
                     <h2 class="products__title title text-row__title">New Our <span class="gradient">Products</span>
@@ -164,7 +164,7 @@
             </div>
         </section>
 
-        <section class="events">
+        <section class="events" id="events">
             <div class="container events__container">
                 <div class="text-row text-row--reverce events__desc">
                     <h2 class="title text-row__title events__title">Our New <span class="gradient">Events</span>
@@ -198,6 +198,59 @@
                 </div>
             </div>
         </section>
+
+        <section class="contacts">
+            <div class="contacts__container container">
+                <div class="contacts__desc">
+                    <h2 class="contacts__title title">Our <span class="gradient">Contacts</span></h2>
+                    <p class="contacts__text">Have time to buy the most harmonious drinks in the new Starbucks coffee
+                        and don't forget about the discount!</p>
+                    <a href="tel:+79999999999" class="contacts__phone">+7-999-999-99-99</a>
+                </div>
+                <div class="contacts__img-wrapper">
+                    <div class="contacts__inner-wrapper">
+                        <img src="./images/signboard.jpg" alt="signboard" class="contacts__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__row">
+                    <a href="#welcome" class="logo gradient footer__logo">StarBucks</a>
+
+                    <nav class="footer__nav">
+                        <div class="footer__nav-col">
+                            <a href="#!" class="footer__nav-link">Main</a>
+                            <a href="#!" class="footer__nav-link">Buy</a>
+                            <a href="#!" class="footer__nav-link">More</a>
+                        </div>
+                        <div class="footer__nav-col">
+                            <a href="#!" class="footer__nav-link">We make</a>
+                            <a href="#!" class="footer__nav-link">Process</a>
+                        </div>
+                        <div class="footer__nav-col">
+                            <a href="#!" class="footer__nav-link">Products</a>
+                            <a href="#!" class="footer__nav-link">Cappuccino</a>
+                            <a href="#!" class="footer__nav-link">Fast</a>
+                            <a href="#!" class="footer__nav-link">Latte</a>
+                        </div>
+                        <div class="footer__nav-col">
+                            <a href="#!" class="footer__nav-link">Events</a>
+                            <a href="#!" class="footer__nav-link">Drinks</a>
+                            <a href="#!" class="footer__nav-link">Eat</a>
+                        </div>
+                    </nav>
+
+                    <a href="#top" class="footer__up-link">
+                        <img src="./images/icons/arrow.svg" alt="" class="footer__arrow">
+                    </a>
+                </div>
+
+                <a href="el:+79999999999" class="footer__phone gradient">+7-999-999-99-99</a>
+            </div>
+        </footer>
     </main>
 </body>
 

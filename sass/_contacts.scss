@@ -1,0 +1,147 @@
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    /* .contacts__container */
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* .contacts__desc */
+
+    &__desc {
+        width: 390px;
+    }
+
+    /* .contacts__title */
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    /* .contacts__text */
+
+    &__text {
+        margin-bottom: 50px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 80px;
+            top: 20px;
+            z-index: -5;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+            filter: blur(90px);
+        }
+    }
+
+    /* .contacts__phone */
+
+    &__phone {
+        font-weight: 500;
+        font-size: 32px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        &::before {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background: url(../images/icons/phone.png);
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    /* .contacts__img-wrapper */
+
+    &__img-wrapper {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -50px;
+            top: 30px;
+            z-index: -5;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);
+            filter: blur(90px);
+        }
+
+        &::after {
+            content: "";
+            width: 920px;
+            height: 670px;
+            position: absolute;
+            right: -245px;
+            bottom: -360px;
+            z-index: -15;
+            background-image: url(../images/icons/lines.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(17deg);
+        }
+    }
+
+    /* .contacts__inner-wrapper */
+
+    &__inner-wrapper {
+        position: relative;
+        padding-right: 35px;
+
+        &::before {
+            content: "";
+            width: calc(100% - 35px);
+            height: 100%;
+            position: absolute;
+            bottom: -25px;
+            right: 0;
+            z-index: -10;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+            background: #237249;
+        }
+
+        &::after {
+            content: "we\Ahave";
+            white-space: pre-wrap;
+            position: absolute;
+            top: 55px;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 250px;
+            height: 250px;
+            font-weight: 500;
+            font-size: 38px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            transform: translate(-50%, -50%);
+            background-image: url(../images/icons/star.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    /* .contacts__img */
+
+    &__img {
+        width: 353px;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+    }
+}
